@@ -8,14 +8,11 @@
 <title></title>
 
 <link href="" rel="icon" type="image/png">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Material+Icons" rel="stylesheet">
 <link type="text/css" href="assets/css/font-awesome.min.css" rel="stylesheet">
-<link type="text/css" href="assets/css/nucleo.css" rel="stylesheet">
 <link type="text/css" href="assets/css/bootstrap-datepicker.min.css" rel="stylesheet">
 <link type="text/css" href="assets/css/bootstrap.css" rel="stylesheet">
 <link type="text/css" href="assets/css/argon.css" rel="stylesheet">
 <link type="text/css" href="assets/css/style.css" rel="stylesheet">
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
 </head>
@@ -206,7 +203,7 @@
                <div class="text-center">
                   
                   <h5 class=" text-center ">
-                    For Employers <br>
+                    For Employers <br></br>
                     Send Email to info@SkillsBrain.in
                   </h5>
                   <div class="text-center mb-4">
@@ -339,9 +336,9 @@
           </div>
       </div>
       <div class="col-lg-4  order-1 mb-2 mb-lg-5 contact" >
-          <h3 class="text-primary font-weight-light text-white">Contact us <br></h3>
+          <h3 class="text-primary font-weight-light text-white">Contact us <br></br></h3>
           <h5 class="mb-0  font-weight-light text-white">Plot no. 44, Kavuri Hills, Phase 1, Behind Hotel Jubilee Ridge, Hyderabad, Telangana, 500033</h5>
-            <a class="h5 mb-0 mt-1 font-weight-light text-white" href="mailto:info@skillbrain.com">info@SkillsBrain.in</a> <br>
+            <a class="h5 mb-0 mt-1 font-weight-light text-white" href="mailto:info@skillbrain.com">info@SkillsBrain.in</a> <br></br>
            <a class="h5 mb-0 mt-1 font-weight-normal text-white" href="tel:+917702535506">+91-7702535506</a>
         </div>
         <div class="col-lg-4 mb-5 order-3">
@@ -370,64 +367,18 @@
     </div>
   </div>
 </footer>
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/bootstrap-datepicker.min.js"></script>
-<script src="assets/js/headroom.min.js"></script>
-<script src="assets/js/nouislider.min.js"></script>
-<script src="assets/js/onscreen.min.js"></script>
-<script src="assets/js/parallax.js"></script>
-<script src="assets/js/argon.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADzo1qNJPmONyIELJQa5Zs4oalk0nSJlw&callback=initMap"
-async defer></script>
-<script>
-  var map;
-  var myLatLng = {lat: 17.4407097, lng: 78.3961363};
-  function initMap() {
-    map = new google.maps.Map(document.getElementById('map'), {
-      center: myLatLng,
-      zoom: 17,
-      
-    });
-    var marker = new google.maps.Marker({
-position: myLatLng,
-map: map,
-draggable:true,
-icon:'assets/img/placeholder.png',
-animation:google.maps.Animation.DROP,
-title: 'SkillBrain, 91 Springboard Kavuri Hills, Hyd'});
-marker.setMap(map);
-  var infowindow = new google.maps.InfoWindow({
-    content:"<h6 class='mx-2 text-primary font-weight-light'>SkillBrain, 91 Springboard Kavuri Hills, Hyd</h6>"
-  });
-  infowindow.open(map, marker); 
-  marker.addListener('mouseover',function(){
-  infowindow.open(map, marker);      
-  })
-  marker.addListener('mouseout',function(){
-infowindow.close();
-  })
-  
-  }
-</script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
- <script>
-  $(() =>{
-    $("#testimonial-slider").owlCarousel({
-        items:1,
-        itemsDesktop:[1000,1],
-        itemsDesktopSmall:[979,1],
-        itemsTablet:[768,1],
-        pagination:true,
-        navigation:false,
-        navigationText:["",""],
-        slideSpeed:1000,
-        singleItem:true,
-        autoPlay:true
-    }); 
-  })
-  </script>
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/popper.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="assets/js/headroom.min.js"></script>
+<script type="text/javascript" src="assets/js/nouislider.min.js"></script>
+<script type="text/javascript" src="assets/js/onscreen.min.js"></script>
+<script type="text/javascript" src="assets/js/argon.min.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADzo1qNJPmONyIELJQa5Zs4oalk0nSJlw&callback=initMap"async defer></script>
+<script type="text/javascript" src="assets/js/core/googlemaps.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+<script type="text/javascript" src="assets/js/core/testimonial-code.js"></script>
 </body>
 </html>

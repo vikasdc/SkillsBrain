@@ -8,9 +8,7 @@
 <title>Dashboard</title>
 
 <link href="" rel="icon" type="image/png">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Material+Icons" rel="stylesheet">
 <link type="text/css" href="assets/css/font-awesome.min.css" rel="stylesheet">
-<link type="text/css" href="assets/css/nucleo.css" rel="stylesheet">
 <link type="text/css" href="assets/css/bootstrap-datepicker.min.css" rel="stylesheet">
 <link type="text/css" href="assets/css/bootstrap.css" rel="stylesheet">
 <link type="text/css" href="assets/css/argon.css" rel="stylesheet">
@@ -59,7 +57,7 @@
   <div class="position-relative">
     <section class="section-shaped my-0">
       <div class="container container-lg">
-        <div class="col px-0" style="margin-top:70px; margin-bottom:100px;">
+        <div class="col px-0 dash-1">
           <div class="row mb-5">
             <div class="col mb-5">
               <div class="nav-wrapper">
@@ -297,242 +295,270 @@
                               </div>
                               <p class="h5 mt-3 text-center text-danger">Note: You need to appear for the test to apply for these companies</p>
                             </div>
-
                           </div>
                         </div>
                         <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
                             <div class="row mb-5">
                               <div class="col mb-5">
-                                 <div class="row">
-                                   <div class="col-md-4 my-2  border rounded p-2">
-                                    <h4 class="text-underline text-center mb-4">Personal Details:</h4>
-                                    <div class="row">
-                                      <div class="col-md-6 mx-auto">
-                                        <img src="assets/img/face1240.jpg" alt="" class="img-fluid rounded-circle shadow">
-                                        <div class="form-group mt-4">
-                                          <label for="" class="h6 text-center m-0">Change Profile</label>
-                                          <div class="input-group input-group-alternative">
-                                            <div class="input-group-prepend">
-                                              <div class="input-group-text text-default">
-                                                <i class="fa fa-user" aria-hidden="true"></i>
-                                              </div>
+                                  <div class="nav-wrapper">
+                                      <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
+                                          <li class="nav-item">
+                                              <a class="nav-link mb-sm-3 mb-md-0 active" id="tabs-icons-text-personal-tab" data-toggle="tab" href="#tabs-icons-text-personal" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true"><i class="fa fa-user mr-2"></i>Personal Details</a>
+                                          </li>
+                                          <li class="nav-item">
+                                              <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-educational-tab" data-toggle="tab" href="#tabs-icons-text-educational" role="tab" aria-controls="tabs-icons-text-2" aria-selected="false"><i class="fa fa-university mr-2"></i>Educational Details</a>
+                                          </li>
+                                          <li class="nav-item">
+                                              <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-professional-tab" data-toggle="tab" href="#tabs-icons-text-professional" role="tab" aria-controls="tabs-icons-text-3" aria-selected="false"><i class="fa fa-user-secret mr-2"></i>Professional Details</a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-md-8 mx-auto mx-sm-0 mx-lg-auto mt-3">
+                                        <div class="card border border-default">
+                                            <div class="card-body p-2">
+                                                <div class="tab-content" id="myTabContent">
+                                                    <div class="tab-pane fade show active" id="tabs-icons-text-personal" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
+                                                            <h4 class=" text-center mb-4">Personal Details:</h4>
+                                                            <div class="row">
+                                                              <div class="col-md-6 mx-auto">
+                                                                <img src="assets/img/face1240.jpg" alt="" class="img-fluid rounded-circle shadow">
+                                                                <div class="form-group mt-4">
+                                                                  <label for="" class="h6 text-center m-0">Change Profile</label>
+                                                                  <div class="input-group input-group-alternative">
+                                                                    <div class="input-group-prepend">
+                                                                      <div class="input-group-text text-default">
+                                                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                                                      </div>
+                                                                    </div>
+                                                                    <input type="file" name="" id="" class="form-control text-default" value="Vikas Dc" placeholder="Your Name">
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                             <form action="" class="mt-3">
+                                                               <div class="form-group">
+                                                                 <label for="" class="h6">Name</label>
+                                                                 <div class="input-group input-group-alternative">
+                                                                   <div class="input-group-prepend">
+                                                                     <div class="input-group-text text-default">
+                                                                       <i class="fa fa-user" aria-hidden="true"></i>
+                                                                     </div>
+                                                                   </div>
+                                                                   <input type="text" name="" id="" class="form-control text-default" value="Vikas Dc" placeholder="Your Name">
+                                                                 </div>
+                                                               </div>
+                                                               <div class="form-group">
+                                                                <label for="" class="h6">Email</label>
+                                                                <div class="input-group input-group-alternative">
+                                                                  <div class="input-group-prepend">
+                                                                    <div class="input-group-text text-default">
+                                                                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                                                                    </div>
+                                                                  </div>
+                                                                  <input type="email" name="" id="" class="form-control text-default" value="dulgundevikaas1999@gmail.com" placeholder="Your Email">
+                                                                </div>
+                                                              </div>
+                                                              <div class="form-group">
+                                                                <label for="" class="h6">Mobile</label>
+                                                                <div class="input-group input-group-alternative">
+                                                                  <div class="input-group-prepend">
+                                                                    <div class="input-group-text text-default">
+                                                                      <i class="fa fa-phone" aria-hidden="true"></i>
+                                                                    </div>
+                                                                  </div>
+                                                                  <input type="text" name="" id="" class="form-control text-default" value="8309942409" placeholder="Your Mobile Number">
+                                                                </div>
+                                                              </div>
+                                                                <p for="" class="h6">Gender</p>
+                                                                <div class="row">
+                                                                  <div class="col-3">
+                                                                    <div class="custom-control custom-radio mb-3">
+                                                                      <input name="custom-radio-1" class="custom-control-input" id="customRadio1" type="radio">
+                                                                      <label class="custom-control-label text-default" for="customRadio1">Male</label>
+                                                                    </div>
+                                                                  </div>
+                                                                  <div class="col-3">
+                                                                    <div class="custom-control custom-radio mb-3">
+                                                                      <input name="custom-radio-1" class="custom-control-input" id="customRadio2" type="radio">
+                                                                      <label class="custom-control-label text-default" for="customRadio2">Female</label>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                  <label for="" class="h6">Address</label>
+                                                                  <div class="input-group input-group-alternative">
+                                                                    <div class="input-group-prepend">
+                                                                      <div class="input-group-text text-default">
+                                                                        <i class="fa fa-address-book" aria-hidden="true"></i>
+                                                                      </div>
+                                                                    </div>
+                                                                  <textarea name="" id="" cols="60" rows="4" placeholder="Your Address..">Lb nagar, Hyderabad</textarea>
+                                                                  </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                  <label for="">Date of Birth</label>
+                                                                  <div class="input-group input-group-alternative">
+                                                                      <div class="input-group-prepend">
+                                                                          <span class="input-group-text text-default"><i class="fa fa-calendar"></i></span>
+                                                                      </div>
+                                                                      <input class="form-control datepicker text-default" placeholder="Select date" type="text" value="03/02/2000">
+                                                                  </div>
+                                                              </div>
+                                                              <div class="form-group">
+                                                                  <label for="" class="h6">Parent's Contact</label>
+                                                                  <div class="input-group input-group-alternative">
+                                                                    <div class="input-group-prepend">
+                                                                      <div class="input-group-text text-default">
+                                                                        <i class="fa fa-phone" aria-hidden="true"></i>
+                                                                      </div>
+                                                                    </div>
+                                                                    <input type="text" name="" id="" class="form-control text-default" value="8309942409" placeholder="Parent's Contact">
+                                                                  </div>
+                                                                </div>
+                                                                <div class="text-center my-4">
+                                                                  <button class="btn btn-default btn-sm">Save Details</button>
+                                                                </div>
+                                                              </form>
+                                                              </div>
+                                                    <div class="tab-pane fade" id="tabs-icons-text-educational" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
+                                                        <h4 class=" text-center mb-4">Eduactional Details</h4>
+                                                      <div class="row">
+                                                          <div class="col-md-12 mx-auto">
+                                                              <form action="" class="mt-3">
+                                                                <div class="form-group">
+                                                                  <label for="" class="h6">Which year are you studying?</label>                                  
+                                                                    <select name="" id="" class="form-control form-control-alternative text-default" required>
+                                                                      <option value="Graduated" selected>Graduated</option>
+                                                                      <option value="1st-yr">1st Year</option>
+                                                                      <option value="2nd-yr">2nd Year</option>
+                                                                      <option value="3rd-yr">3rd Year</option>
+                                                                      <option value="4th-yr">4th Year</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                  <label for="" class="h6">Degree <span class="text-default">*</span></label>                                  
+                                                                    <select name="" id="" class="form-control form-control-alternative text-default" required>
+                                                                      <option value="n/a" selected>Degree</option>
+                                                                      <option value="b-tech">B-Tech</option>
+                                                                      <option value="m-tech">M-Tech</option>
+                                                                      <option value="mba">MBA</option>
+                                                                      <option value="diploma">Diploma</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                  <label for="" class="h6">Name of Your College</label>
+                                                                  <div class="input-group input-group-alternative">
+                                                                    <div class="input-group-prepend">
+                                                                      <div class="input-group-text text-default">
+                                                                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                                                      </div>
+                                                                    </div>
+                                                                    <input type="text" name="" id="" class="form-control text-default" value="IIIT Hyderabad" placeholder="Your College Name">
+                                                                  </div>
+                                                                </div>
+                                                                <p class="h5">Past Education*</p>
+                                                                <div class="form-group">
+                                                                  <label for="" class="h6">10th Passedout Year</label>                                  
+                                                                    <select name="" id="" class="form-control form-control-alternative text-default" required>
+                                                                      <option value="n/a" selected>Year</option>
+                                                                      <option value="2016">2016</option>
+                                                                      <option value="2015">2015</option>
+                                                                      <option value="2014">2014</option>
+                                                                      <option value="2013">2013</option>
+                                                                      <option value="2012">2012</option>
+                                                                      <option value="2011">2011</option>
+                                                                      <option value="2010">2010</option>
+                                                                      <option value="2009">2009</option>
+                                                                      <option value="2008">2008</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                  <label for="" class="h6">12th / Diploma Passedout Year</label>                                  
+                                                                    <select name="" id="" class="form-control form-control-alternative text-default" required>
+                                                                      <option value="n/a" selected>Year</option>
+                                                                      <option value="2019">2019</option>
+                                                                      <option value="2018">2018</option>
+                                                                      <option value="2017">2017</option>
+                                                                      <option value="2016">2016</option>
+                                                                      <option value="2015">2015</option>
+                                                                      <option value="2014">2014</option>
+                                                                      <option value="2013">2013</option>
+                                                                      <option value="2012">2012</option>
+                                                                      <option value="2011">2011</option>
+                                                                      <option value="2010">2010</option>
+                                                                    </select>
+                                                                </div>
+                                                                 <div class="text-center my-4">
+                                                                   <button class="btn btn-default btn-sm">Save Details</button>
+                                                                 </div>
+                                                               </form>
+                                                            </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="tabs-icons-text-professional" role="tabpanel" aria-labelledby="tabs-icons-text-3-tab">
+                                                       <div class="row">
+                                                          <div class="col mx-auto">
+                                                              <h4 class=" text-center mb-4">Professional Details</h4>
+                                                              <h5> Any Earlier Experience?</h5>
+                                                              <form action="" class="mt-3">
+                                                                <div class="form-group">
+                                                                  <label for="" class="h6">Any Projects Worked on?</label>
+                                                                  <div class="input-group input-group-alternative">
+                                                                    <div class="input-group-prepend">
+                                                                      <div class="input-group-text text-default">
+                                                                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                                                      </div>
+                                                                    </div>
+                                                                    <input type="text" name="" id="" class="form-control text-default" value="Ai Recommendation System" placeholder="Project Name">
+                                                                  </div>
+                                                                </div>
+                                                                <p class="h6">Project Start and End Date</p>
+                                                                <div class="input-daterange datepicker row align-items-center">
+                                                                  <div class="col">
+                                                                      <div class="form-group">
+                                                                          <div class="input-group input-group-alternative">
+                                                                              <div class="input-group-prepend">
+                                                                                  <span class="input-group-text text-default"><i class="fa fa-calendar"></i></span>
+                                                                              </div>
+                                                                              <input class="form-control" placeholder=" Start date" type="text">
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+                                                                  <div class="col">
+                                                                      <div class="form-group">
+                                                                          <div class="input-group input-group-alternative">
+                                                                              <div class="input-group-prepend">
+                                                                                  <span class="input-group-text text-default"><i class="fa fa-calendar"></i></span>
+                                                                              </div>
+                                                                              <input class="form-control" placeholder=" End date" type="text" >
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                                <div class="form-group">
+                                                                  <label for="" class="h6">Any Internship or Job? If Yes Company Name</label>
+                                                                  <div class="input-group input-group-alternative">
+                                                                    <div class="input-group-prepend">
+                                                                      <div class="input-group-text text-default">
+                                                                        <i class="fa fa-building" aria-hidden="true"></i>
+                                                                      </div>
+                                                                    </div>
+                                                                    <input type="text" name="" id="" class="form-control text-default" value="INFOSYS" placeholder="Your College Name">
+                                                                  </div>
+                                                                </div>
+                                                                 <div class="text-center my-4">
+                                                                   <button class="btn btn-default btn-sm">Save Details</button>
+                                                                 </div>
+                                                               </form>
+                                                            </div>
+                                                       </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <input type="file" name="" id="" class="form-control text-default" value="Vikas Dc" placeholder="Your Name">
-                                          </div>
                                         </div>
-                                      </div>
                                     </div>
-                                     <form action="" class="mt-3">
-                                       <div class="form-group">
-                                         <label for="" class="h6">Name</label>
-                                         <div class="input-group input-group-alternative">
-                                           <div class="input-group-prepend">
-                                             <div class="input-group-text text-default">
-                                               <i class="fa fa-user" aria-hidden="true"></i>
-                                             </div>
-                                           </div>
-                                           <input type="text" name="" id="" class="form-control text-default" value="Vikas Dc" placeholder="Your Name">
-                                         </div>
-                                       </div>
-                                       <div class="form-group">
-                                        <label for="" class="h6">Email</label>
-                                        <div class="input-group input-group-alternative">
-                                          <div class="input-group-prepend">
-                                            <div class="input-group-text text-default">
-                                              <i class="fa fa-envelope" aria-hidden="true"></i>
-                                            </div>
-                                          </div>
-                                          <input type="email" name="" id="" class="form-control text-default" value="dulgundevikaas1999@gmail.com" placeholder="Your Email">
-                                        </div>
-                                      </div>
-                                      <div class="form-group">
-                                        <label for="" class="h6">Mobile</label>
-                                        <div class="input-group input-group-alternative">
-                                          <div class="input-group-prepend">
-                                            <div class="input-group-text text-default">
-                                              <i class="fa fa-phone" aria-hidden="true"></i>
-                                            </div>
-                                          </div>
-                                          <input type="text" name="" id="" class="form-control text-default" value="8309942409" placeholder="Your Mobile Number">
-                                        </div>
-                                      </div>
-                                        <p for="" class="h6">Gender</p>
-                                        <div class="row">
-                                          <div class="col-4">
-                                            <div class="custom-control custom-radio mb-3">
-                                              <input name="custom-radio-1" class="custom-control-input" id="customRadio1" type="radio">
-                                              <label class="custom-control-label text-default" for="customRadio1">Male</label>
-                                            </div>
-                                          </div>
-                                          <div class="col-4">
-                                            <div class="custom-control custom-radio mb-3">
-                                              <input name="custom-radio-1" class="custom-control-input" id="customRadio2" type="radio">
-                                              <label class="custom-control-label text-default" for="customRadio2">Female</label>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="form-group">
-                                          <label for="" class="h6">Address</label>
-                                          <div class="input-group input-group-alternative">
-                                            <div class="input-group-prepend">
-                                              <div class="input-group-text text-default">
-                                                <i class="fa fa-address-book" aria-hidden="true"></i>
-                                              </div>
-                                            </div>
-                                          <textarea name="" id="" cols="30" rows="4" placeholder="Your Address..">Lb nagar, Hyderabad</textarea>
-                                          </div>
-                                        </div>
-                                        <div class="form-group">
-                                          <label for="">Date of Birth</label>
-                                          <div class="input-group input-group-alternative">
-                                              <div class="input-group-prepend">
-                                                  <span class="input-group-text text-default"><i class="fa fa-calendar"></i></span>
-                                              </div>
-                                              <input class="form-control datepicker text-default" placeholder="Select date" type="text" value="03/02/2000">
-                                          </div>
-                                      </div>
-                                      <div class="form-group">
-                                          <label for="" class="h6">Parent's Contact</label>
-                                          <div class="input-group input-group-alternative">
-                                            <div class="input-group-prepend">
-                                              <div class="input-group-text text-default">
-                                                <i class="fa fa-phone" aria-hidden="true"></i>
-                                              </div>
-                                            </div>
-                                            <input type="text" name="" id="" class="form-control text-default" value="8309942409" placeholder="Parent's Contact">
-                                          </div>
-                                        </div>
-                                        <div class="text-center my-4">
-                                          <button class="btn btn-default btn-sm">Save Details</button>
-                                        </div>
-                                      </form>
-                                      </div>
-                                      <div class="col-md-4 border rounded p-2 my-2 align-self-center">
-                                        <h4 class="text-underline text-center mb-4">Eduactional Details</h4>
-                                        <form action="" class="mt-3">
-                                          <div class="form-group">
-                                            <label for="" class="h6">Which year are you studying?</label>                                  
-                                              <select name="" id="" class="form-control form-control-alternative text-default" required>
-                                                <option value="Graduated" selected>Graduated</option>
-                                                <option value="1st-yr">1st Year</option>
-                                                <option value="2nd-yr">2nd Year</option>
-                                                <option value="3rd-yr">3rd Year</option>
-                                                <option value="4th-yr">4th Year</option>
-                                              </select>
-                                          </div>
-                                          <div class="form-group">
-                                            <label for="" class="h6">Degree <span class="text-default">*</span></label>                                  
-                                              <select name="" id="" class="form-control form-control-alternative text-default" required>
-                                                <option value="n/a" selected>Degree</option>
-                                                <option value="b-tech">B-Tech</option>
-                                                <option value="m-tech">M-Tech</option>
-                                                <option value="mba">MBA</option>
-                                                <option value="diploma">Diploma</option>
-                                              </select>
-                                          </div>
-                                          <div class="form-group">
-                                            <label for="" class="h6">Name of Your College</label>
-                                            <div class="input-group input-group-alternative">
-                                              <div class="input-group-prepend">
-                                                <div class="input-group-text text-default">
-                                                  <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                                                </div>
-                                              </div>
-                                              <input type="text" name="" id="" class="form-control text-default" value="IIIT Hyderabad" placeholder="Your College Name">
-                                            </div>
-                                          </div>
-                                          <p class="h5">Past Education*</p>
-                                          <div class="form-group">
-                                            <label for="" class="h6">10th Passedout Year</label>                                  
-                                              <select name="" id="" class="form-control form-control-alternative text-default" required>
-                                                <option value="n/a" selected>Year</option>
-                                                <option value="2016">2016</option>
-                                                <option value="2015">2015</option>
-                                                <option value="2014">2014</option>
-                                                <option value="2013">2013</option>
-                                                <option value="2012">2012</option>
-                                                <option value="2011">2011</option>
-                                                <option value="2010">2010</option>
-                                                <option value="2009">2009</option>
-                                                <option value="2008">2008</option>
-                                              </select>
-                                          </div>
-                                          <div class="form-group">
-                                            <label for="" class="h6">12th / Diploma Passedout Year</label>                                  
-                                              <select name="" id="" class="form-control form-control-alternative text-default" required>
-                                                <option value="n/a" selected>Year</option>
-                                                <option value="2019">2019</option>
-                                                <option value="2018">2018</option>
-                                                <option value="2017">2017</option>
-                                                <option value="2016">2016</option>
-                                                <option value="2015">2015</option>
-                                                <option value="2014">2014</option>
-                                                <option value="2013">2013</option>
-                                                <option value="2012">2012</option>
-                                                <option value="2011">2011</option>
-                                                <option value="2010">2010</option>
-                                              </select>
-                                          </div>
-                                           <div class="text-center my-4">
-                                             <button class="btn btn-default btn-sm">Save Details</button>
-                                           </div>
-                                         </form>
-                                      </div>
-                                      <div class="col-md-4 border rounded p-2 my-2 align-self-center">
-                                        <h4 class="text-underline text-center mb-4">Professional Details</h4>
-                                        <h5> Any Earlier Experience?</h5>
-                                        <form action="" class="mt-3">
-                                          <div class="form-group">
-                                            <label for="" class="h6">Any Projects Worked on?</label>
-                                            <div class="input-group input-group-alternative">
-                                              <div class="input-group-prepend">
-                                                <div class="input-group-text text-default">
-                                                  <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                                                </div>
-                                              </div>
-                                              <input type="text" name="" id="" class="form-control text-default" value="Ai Recommendation System" placeholder="Project Name">
-                                            </div>
-                                          </div>
-                                          <p class="h6">Project Start and End Date</p>
-                                          <div class="input-daterange datepicker row align-items-center">
-                                            <div class="col">
-                                                <div class="form-group">
-                                                    <div class="input-group input-group-alternative">
-                                                        <div class="input-group-prepend">
-                                                            <span class="input-group-text text-default"><i class="fa fa-calendar"></i></span>
-                                                        </div>
-                                                        <input class="form-control" placeholder=" Start date" type="text">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col">
-                                                <div class="form-group">
-                                                    <div class="input-group input-group-alternative">
-                                                        <div class="input-group-prepend">
-                                                            <span class="input-group-text text-default"><i class="fa fa-calendar"></i></span>
-                                                        </div>
-                                                        <input class="form-control" placeholder=" End date" type="text" >
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                          <div class="form-group">
-                                            <label for="" class="h6">Any Internship or Job? If Yes Company Name</label>
-                                            <div class="input-group input-group-alternative">
-                                              <div class="input-group-prepend">
-                                                <div class="input-group-text text-default">
-                                                  <i class="fa fa-building" aria-hidden="true"></i>
-                                                </div>
-                                              </div>
-                                              <input type="text" name="" id="" class="form-control text-default" value="INFOSYS" placeholder="Your College Name">
-                                            </div>
-                                          </div>
-                                           <div class="text-center my-4">
-                                             <button class="btn btn-default btn-sm">Save Details</button>
-                                           </div>
-                                         </form>
-                                      </div>
-                                   </div>
+                                  </div>
                                  </div>
                               </div>
                             </div>
@@ -956,9 +982,9 @@
           </div>
       </div>
       <div class="col-lg-4  order-1 mb-2 mb-lg-5 contact" >
-          <h3 class="text-primary font-weight-light text-white">Contact us <br></h3>
+          <h3 class="text-primary font-weight-light text-white">Contact us <br></br></h3>
           <h5 class="mb-0  font-weight-light text-white">Plot no. 44, Kavuri Hills, Phase 1, Behind Hotel Jubilee Ridge, Hyderabad, Telangana, 500033</h5>
-            <a class="h5 mb-0 mt-1 font-weight-light text-white" href="mailto:info@skillbrain.com">info@SkillsBrain.in</a> <br>
+            <a class="h5 mb-0 mt-1 font-weight-light text-white" href="mailto:info@skillbrain.com">info@SkillsBrain.in</a> <br></br>
            <a class="h5 mb-0 mt-1 font-weight-normal text-white" href="tel:+917702535506">+91-7702535506</a>
         </div>
         <div class="col-lg-4 mb-5 order-3">
@@ -987,47 +1013,16 @@
     </div>
   </div>
 </footer>
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/bootstrap-datepicker.min.js"></script>
-<script src="assets/js/headroom.min.js"></script>
-<script src="assets/js/nouislider.min.js"></script>
-<script src="assets/js/onscreen.min.js"></script>
-<script src="assets/js/parallax.js"></script>
-<script src="assets/js/argon.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADzo1qNJPmONyIELJQa5Zs4oalk0nSJlw&callback=initMap"
-async defer></script>
-<script>
-  var map;
-  var myLatLng = {lat: 17.4407097, lng: 78.3961363};
-  function initMap() {
-    map = new google.maps.Map(document.getElementById('map'), {
-      center: myLatLng,
-      zoom: 17,
-      
-    });
-    var marker = new google.maps.Marker({
-position: myLatLng,
-map: map,
-draggable:true,
-icon:'../assets/img/placeholder.png',
-animation:google.maps.Animation.DROP,
-title: 'SkillBrain, 91 Springboard Kavuri Hills, Hyd'});
-marker.setMap(map);
-  var infowindow = new google.maps.InfoWindow({
-    content:"<h6 class='mx-2 text-primary font-weight-light'>SkillBrain, 91 Springboard Kavuri Hills, Hyd</h6>"
-  });
-  infowindow.open(map, marker); 
-  marker.addListener('mouseover',function(){
-  infowindow.open(map, marker);      
-  })
-  marker.addListener('mouseout',function(){
-infowindow.close();
-  })
-  
-  }
-</script>
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/popper.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="assets/js/headroom.min.js"></script>
+<script type="text/javascript" src="assets/js/nouislider.min.js"></script>
+<script type="text/javascript" src="assets/js/onscreen.min.js"></script>
+<script type="text/javascript" src="assets/js/argon.min.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADzo1qNJPmONyIELJQa5Zs4oalk0nSJlw&callback=initMap"async defer></script>
+<script type="text/javascript" src="assets/js/core/googlemaps.js"></script>
 </body>
 
 </html>
